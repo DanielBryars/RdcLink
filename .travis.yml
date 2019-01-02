@@ -7,7 +7,7 @@ branches:
     # this is required to avoid building tags
     - /^v?\d+\.\d+\.\d+(\w*\W*)*$/
 install:
-  - dotnet restore $TRAVIS_BUILD_DIR/test/
+  - dotnet restore $TRAVIS_BUILD_DIR
 script: 
   - dotnet test $TRAVIS_BUILD_DIR/test/
 before_deploy:
